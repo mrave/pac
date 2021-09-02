@@ -21,7 +21,7 @@ function FindProxyForURL(url, host) {
   }
   for(const url of throughDomains || []) {
     if (shExpMatch(host, '*.'.concat(url))) {
-        return "PROXY 192.168.1.69:12345";
+        return "PROXY mobileswg.acmeinc.io:12345";
     }
   }
   // Domains_func_end/ Don't proxy specific hostname
@@ -128,5 +128,5 @@ function FindProxyForURL(url, host) {
 */
   //alert("url = " + url + " *** host = " + host + " PROXY");
 
-  return 'PROXY 192.168.1.69:12345';
+  return 'PROXY mobileswg.acmeinc.io:12345';
 }
